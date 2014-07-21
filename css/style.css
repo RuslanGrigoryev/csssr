@@ -150,12 +150,12 @@ a, a:hover {
 .main {
   min-height: 100%;
   width: 1000px;
-  padding: 48px;
+  padding: 67px 48px 48px 48px;
   margin: 0 auto;
   background: url(../images/markup/pattern.png);
 }
 header {
-  height: 120px;
+  height: 105px;
 }
 .logo {
   float: left;
@@ -170,13 +170,20 @@ header {
 .logo__link_caption {
   font-size: 10px;
   font-family: 'PT Sans', sans-serif;
+  margin: 7px 0 0 -5px;
+  display: block;
 }
 .seal {
   float: right;
+  position: relative;
+  top: -19px;
+  /* left: -6px; */
+  padding-right: 6px;
 }
 .head {
   text-align: center;
-  margin: 20px 0;
+  margin: 20px 0 67px 0;
+  padding-right: 40px;
 }
 .main-data {
   padding: 0 61px;
@@ -185,12 +192,13 @@ header {
   margin: 10px 0;
   background: url(../images/markup/divider.png) center bottom repeat-x;
 }
-.main-data__wrap:last-child {
+.main-data__wrap:last-child, .main-data__wrap:last-child {
   background: none;
 }
 .main-data__title {
   background: url(../images/markup/pattern.png);
   padding: 0 18px 2px 0;
+  word-spacing: -2px;
 }
 .main-data__text {
   font-family: "Courier New", Courier, monospace;
