@@ -130,6 +130,38 @@ a, a:hover {
   -ms-user-select: none;
   user-select: none;
 }
+
+
+
+.skill-data__input {
+  display:none;
+}
+.skill-data__label {
+  padding-left: 25px;
+  height:28px; 
+  display:inline-block;
+  line-height: 28px;
+  background-repeat:no-repeat;
+  background-position: 0 0;
+  vertical-align:middle;
+  cursor:pointer;
+}
+.skill-data__input:checked + .skill-data__label {
+  background-position: 0 -28px;
+}
+.skill-data__label {
+  background-image:url(../images/markup/skill-checkbox.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+
 /*main styles*/
 .main {
   min-height: 100%;
