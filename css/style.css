@@ -28,7 +28,9 @@ time, mark, audio, video {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-
+:focus {
+  outline: none;
+}
 ::-webkit-input-placeholder {
   /* WebKit browsers */
   color: #fff;
@@ -242,7 +244,70 @@ header {
 }
 .skill-js .main-data__title {
   display: block;
+  margin: 0 0 30px 0;
 }
 footer .main-data__text {
   background: url(../images/markup/divider.png) center bottom repeat-x;
+}
+/*jquey ui styles*/
+.ui-widget-content {
+  border: none;
+}
+.ui-slider-horizontal {
+  height: 3px;
+}
+.ui-widget-content {
+  background: url(../images/markup/divider.png) repeat-x;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background: url(../images/markup/slider.png) no-repeat;
+  border: none;
+  cursor: pointer;
+}
+.ui-slider-horizontal .ui-slider-handle {
+  top: -14px;
+}
+.dividers {
+  width: 100%;
+  height: 23px;
+  position: relative;
+}
+.text-divider {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  font-size: 13px;
+}
+.dividers__short, .dividers__long {
+  position: absolute;
+  top: 0;
+  background: #41261f;
+  height: 23px;
+  width: 3px;
+}
+.text-divider__dividers {
+  display: inline-block;
+  position: absolute;
+}
+.dividers__short {
+  height: 11px;
+}
+.dividers__0 {
+  left: 0;
+}
+.dividers__25 {
+  left: 25%;
+}
+.dividers__50 {
+  left: 50%;
+}
+.dividers__100 {
+  right: 0;
+}
+.ui-slider .ui-slider-handle {
+  width: 15px;
+  height: 15px;
+}
+.ui-slider-horizontal .ui-slider-handle {
+  margin-left: -6px;
 }
