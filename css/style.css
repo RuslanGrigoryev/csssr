@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #fff;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #fff;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input, textarea, input:focus, textarea:focus {
+  outline: none;
+  padding: 5px;
+  color: #fff;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  line-height: 1;
+  background: #797979;
+  color: #2f1b15;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a, a:hover {
+  color: #2f1b15;
+  text-decoration: none;
+}
+
+/*main styles*/
+.main {
+  min-height: 100%;
+  width: 1000px;
+  padding: 48px;
+  margin: 0 auto;
+  background: url(../images/markup/pattern.png);
+}
+header {
+  height: 120px;
+}
+.logo {
+  float: left;
+}
+.logo__link {
+  display: block;
+  text-align: center;
+}
+.logo__link_image {
+  display: block;
+}
+.logo__link_caption {
+  font-size: 10px;
+  font-family: 'PT Sans', sans-serif;
+}
+.seal {
+  float: right;
+}
+
+.head {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.main-data {
+  padding: 0 61px;
+}
+.main-data__wrap {
+  margin: 10px 0;
+}
+.main-data__title {
+  padding-right: 10px;
+}
+.main-data__text {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: 500;
+}
+.main-data__link {
+  text-decoration: underline;
+  color: #014f98;
+}
+.main-data__link:hover {
+  color: #014f98;
+  text-decoration: none;
+}
+.main-data__form {
+  display: inline-block;
+}
+
+.skill-data {
+  padding: 20px 170px 20px 20px;
+}
+.skill-data__title {
+  display: block;
+  margin: 5px 0 20px 0;
+}
+.skill-data__text {
+  color: #3d3d3d;
+  padding-left: 17px;
+  line-height: 20px;
+  text-align: left;
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+}
+.skill-data__text__star {
+  font-size: 36px;
+  position: absolute;
+  left: 0;
+  z-index: 999;
+  top: 8px;
+}
+.skill-data__form {
+  padding-top: 20px;
+}
+.skill-data__form__list {
+  display: inline-block;
+  width: 32.5%;
+  vertical-align: top;
+}
+.skill-data__form__item {
+  margin: 10px 0;
+}
+.skill-data__label {
+  font-size: 21px;
+}
+.skill-js .main-data__title {
+  display: block;
+}
