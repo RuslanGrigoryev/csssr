@@ -96,7 +96,6 @@ q:before, q:after {
   content: '';
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -184,9 +183,14 @@ header {
 }
 .main-data__wrap {
   margin: 10px 0;
+  background: url(../images/markup/divider.png) center bottom repeat-x;
+}
+.main-data__wrap:last-child {
+  background: none;
 }
 .main-data__title {
-  padding-right: 10px;
+  background: url(../images/markup/pattern.png);
+  padding: 0 18px 2px 0;
 }
 .main-data__text {
   font-family: "Courier New", Courier, monospace;
