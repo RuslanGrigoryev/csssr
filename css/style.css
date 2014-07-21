@@ -129,14 +129,6 @@ a, a:hover {
 .skill-data__label {
   background-image:url(../images/markup/skill-checkbox.png);
 }
-.pool-label, .skill-data__label {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 .skill-data__label {
   padding: 4px 0 0 25px;
   height:28px; 
