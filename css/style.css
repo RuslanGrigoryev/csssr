@@ -105,7 +105,7 @@ a, a:hover {
   text-decoration: none;
 }
 /*custom styles*/
-.pool-radio {
+.pool-radio, .skill-data__input {
   display:none;
 }
 .pool-radio + .pool-label {
@@ -118,23 +118,22 @@ a, a:hover {
   vertical-align:middle;
   cursor:pointer;
 }
-.pool-radio:checked + .pool-label {
+.pool-radio:checked + .pool-label, .skill-data__input:checked + .skill-data__label {
   background-position: 0 -28px;
 }
 .pool-label {
   background-image:url(../images/markup/pool-radio.png);
+}
+.skill-data__label {
+  background-image:url(../images/markup/skill-checkbox.png);
+}
+.pool-label, .skill-data__label {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-
-
-.skill-data__input {
-  display:none;
 }
 .skill-data__label {
   padding-left: 25px;
@@ -146,22 +145,6 @@ a, a:hover {
   vertical-align:middle;
   cursor:pointer;
 }
-.skill-data__input:checked + .skill-data__label {
-  background-position: 0 -28px;
-}
-.skill-data__label {
-  background-image:url(../images/markup/skill-checkbox.png);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-
-
-
 /*main styles*/
 .main {
   min-height: 100%;
@@ -190,12 +173,10 @@ header {
 .seal {
   float: right;
 }
-
 .head {
   text-align: center;
   margin: 20px 0;
 }
-
 .main-data {
   padding: 0 61px;
 }
@@ -209,6 +190,7 @@ header {
   font-family: "Courier New", Courier, monospace;
   font-size: 30px;
   font-weight: 500;
+  padding: 0 5px;
 }
 .main-data__link {
   text-decoration: underline;
@@ -221,7 +203,6 @@ header {
 .main-data__form {
   display: inline-block;
 }
-
 .skill-data {
   padding: 20px 170px 20px 20px;
 }
@@ -261,4 +242,7 @@ header {
 }
 .skill-js .main-data__title {
   display: block;
+}
+footer .main-data__text {
+  background: url(../images/markup/divider.png) center bottom repeat-x;
 }
