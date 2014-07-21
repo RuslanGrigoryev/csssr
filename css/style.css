@@ -104,7 +104,32 @@ a, a:hover {
   color: #2f1b15;
   text-decoration: none;
 }
-
+/*custom styles*/
+.pool-radio {
+  display:none;
+}
+.pool-radio + .pool-label {
+  padding-left: 30px;
+  height:28px; 
+  display:inline-block;
+  line-height: 28px;
+  background-repeat:no-repeat;
+  background-position: 0 0;
+  vertical-align:middle;
+  cursor:pointer;
+}
+.pool-radio:checked + .pool-label {
+  background-position: 0 -28px;
+}
+.pool-label {
+  background-image:url(../images/markup/pool-radio.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 /*main styles*/
 .main {
   min-height: 100%;
